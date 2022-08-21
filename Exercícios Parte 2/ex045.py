@@ -3,20 +3,20 @@ from random import randint
 from time import sleep
 itens = ('Pedra', 'Papel', 'Tesoura')
 comput = randint(0, 2)
-print('''Suas opções:
+print('''\033[36mSuas opções:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
-[ 2 ] TESOURA''')
+[ 2 ] TESOURA\033[m''')
 jogador = int(input('Qual é a sua jogada? '))
 print('JO')
 sleep(1)
 print('KEN')
 sleep(1)
 print('PÔ!!')
-print('--' * 12)
-print('Computador jogou {}'.format(itens[comput]))
-print('Jogador jogou {}'.format(itens[jogador]))
-print('--' * 12)
+print('\033[33m--\033[m' * 12)
+print('\033[33mComputador jogou: {}\033[m'.format(itens[comput]))
+print('\033[33mJogador jogou: {}\033[m'.format(itens[jogador]))
+print('\033[33m--\033[m' * 12)
 if comput == 0: # computador jogou PEDRA
     if jogador == 0:
         print('EMPATE')

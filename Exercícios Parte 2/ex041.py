@@ -5,12 +5,12 @@ nasc = int(input('Ano de nascimento: '))
 idade = atual - nasc
 print('O atleta tem {} anos.'.format(idade))
 if idade <= 9:
-    print('Classificação MIRIM')
+    print('Classificação \033[34mMIRIM\033[m')
 elif idade <= 14:
-    print('Classificação INFANTIL')
+    print('Classificação \033[33mINFANTIL\033[m')
 elif idade <= 19:
-    print('Classificação JÚNIOR')
+    print('Classificação \033[35mJÚNIOR\033[m')
 elif idade <= 25:
-    print('Classificação SÊNIOR')
+    print('Classificação \033[32mSÊNIOR\033[m')
 else:
-    print('Classificação MASTER')
+    print('Classificação \033[31mMASTER\033[m')
