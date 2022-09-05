@@ -26,21 +26,21 @@ if computer == 0: # computer played ROCK
         print('COMPUTER WINS')
     else:
         print('INVALID MOVE!')
-elif comput == 1: # computer played PAPER
-    if jogador == 0:
+elif computer == 1: # computer played PAPER
+    if player == 0:
         print('COMPUTER WINS')
-    elif jogador == 1:
+    elif player == 1:
         print('DRAW')
-    elif jogador == 2:
+    elif player == 2:
         print('PLAYER WINS')
     else:
         print('INVALID MOVE!')
-elif comput == 2: # computer played SCISSORS
-    if jogador == 0:
+elif computer == 2: # computer played SCISSORS
+    if player == 0:
         print('PLAYER WINS')
-    elif jogador == 1:
+    elif player == 1:
         print('COMPUTER WINS')
-    elif jogador == 2:
+    elif player == 2:
         print('DRAW')
     else:
         print('INVALID MOVE!')
